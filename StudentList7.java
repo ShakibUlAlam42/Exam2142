@@ -5,10 +5,10 @@ public class StudentList {
 	public static void main(String[] args) {
 
 //		Check arguments
-		if(args[0].equals("All")) 			//here we change variable name		
-								//update here for beter consistancy
+		if(args[0].equals("a")) 				//update here for beter consistancy
                 {
-			System.out.println("Loading data ...");			
+			System.out.println("Loading data ...");		//here we include all students data
+	
 			try {
 			BufferedReader s = new BufferedReader(
 					new InputStreamReader(
@@ -21,7 +21,8 @@ public class StudentList {
 		}
 		else if(args[0].equals("r")) 
 		{
-			System.out.println("Loading data ...");		//step 2
+			System.out.println("Loading data ...");		//here we work probability of student
+
 		
 			try {
 			BufferedReader s = new BufferedReader(
@@ -37,7 +38,8 @@ public class StudentList {
 			System.out.println("Data Loaded.");			
 		}
 		else if(args[0].contains("+")){
-			System.out.println("Loading data ...");			
+			System.out.println("Loading data ...");		   //here we add another sudent information
+	
 			try {
 			BufferedWriter s = new BufferedWriter(
 					new FileWriter("students.txt", true));
